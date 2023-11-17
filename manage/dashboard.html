@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenieAcademy</title>
+    <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body>
+        
+        <main>
+            <section class="side">
+                <header style="justify-content: center;
+                display: flex; background-color: transparent; ">
+                <div class="user" style="border-radius: 5px; background-color: #6719bd; height: 60px; width:60px; align-items: center;">
+                <img src="img/user_icon.png" alt="user_icon" width="100%" style="border-radius: 5px;"></div>
+             </header><p>
+             <!--   <?php 
+                
+             session_start(); 
+             if (isset($_SESSION['staff_id'])){
+                 $user = $_SESSION['staff_id']; 
+                 include 'connection.php';
+                 $sql = "SELECT username FROM users WHERE staff_id = $user";
+                 $result = $conn->query($sql);
+                 if($result->num_rows > 0){
+                    $row = $result->fetch_assoc();
+                    $username = $row["username"];
+                    echo $username;
+                
+
+                 } 
+            }  
+            else {
+                header("Location:index.html");}
+                ?> -->
+                </p>
+             <form action="clear.php" method="POST" class="logout"><button type="submit">Log Out</button></form>
+
+            </section>
+            <section class="content"><header>
+                <h1>EXAMS MANAGEMENT SYSTEM</h1>
+               
+            </header>
+            <br>
+            <div class="buttons">
+                <div class="upload"><img src="img/upload_results.png" alt="" width="70px"> <p><b>UPLOAD RESULTS</b></p></div>
+                <div class="upload"><img src="img/add_user.png" alt="" width="70px"> <p><b>ADD STUDENT</b></p></div>
+                <div class="upload"><img src="img/edit_icon.png" alt="" width="70px"> <p><b>EDIT RESULTS</b></p></div>
+                
+                
+
+
+             
+            
+            
+                <div class="upload"><img src="img/download_result.png" alt="" width="70px"> <p><b>DOWNLOAD RESULTS</b></p></div>
+                <div class="upload"><img src="img/login_icon.png" alt="" width="70px"> <p><b>CREATE CLASS</b></p></div>
+                <div class="upload"><img src="img/add_user.png" alt="" width="70px"> <p><b>ADD TEACHER</b></p></div>                
+            
+            </div>
+            
+            Main Section
+            <header>
+                <br>
+               
+            </header>
+            <div class="buttons2">
+                <div class="upload2"> <p><b>Total Students: </b></p></div>
+                <div class="upload2"> <p><b>Total Staff: </b></p></div>
+                <div class="upload2"> <p><b>Total Courses: </b></p></div>
+                
+                
+
+
+            </div>
+           </section>
+            
+        </main>   
+        <!--<footer>GenieLab | Copyright @ 2023</footer> -->
+    </body>
+    
+</html>
+

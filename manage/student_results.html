@@ -1,0 +1,52 @@
+<html>
+    <head> 
+        <title>GenieAcademy</title>
+        <link rel="stylesheet" href="student_result.css">
+    </head>
+    <body>
+        
+        <main>
+
+            <header style="display: flex; align-items: center; justify-content: space-around;">
+               <p>Welcome</p><img src="img/user_icon.png" alt="user_icon" width="50px" style="border-radius: 50%; border:2px solid white; margin-right: 20px;"><form action="clear.php" method="POST"><button type="submit" style="border: none; height: 30px; background-color: white; border-radius: 5px; font-weight: bolder;">Log Out</button></form>
+               
+            </header>
+            <section class="side">
+                
+                
+             
+             <!--   <?php 
+                
+             session_start(); 
+             if (isset($_SESSION['staff_id'])){
+                 $user = $_SESSION['staff_id']; 
+                 include 'connection.php';
+                 $sql = "SELECT username FROM users WHERE staff_id = $user";
+                 $result = $conn->query($sql);
+                 if($result->num_rows > 0){
+                    $row = $result->fetch_assoc();
+                    $username = $row["username"];
+                    echo $username;
+                
+
+                 } 
+            }  
+            else {
+                header("Location:index.html");}
+                ?> -->
+                </p>
+             
+            </section>
+            
+            
+            <section class="content">
+            Main Section
+        
+           </section>
+            
+        </main>   
+        <!--<footer>GenieLab | Copyright @ 2023</footer> -->
+    </body>
+    
+</html>
+
